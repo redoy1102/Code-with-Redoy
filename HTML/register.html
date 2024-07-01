@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Redoy Bank</title>
+
+    <!-- tailwind css cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.8/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="m-0 p-0">
+    <div class="flex justify-center items-center h-screen">
+        <div id="register_container" class="md:w-1/2 lg:w-1/2">
+            <h1 id="register_text" class="text-center text-3xl lg:text-5xl">Register</h1>
+
+            <!-- Name -->
+            <label class="input input-bordered flex items-center gap-2 my-5">
+                <i class="fa-solid fa-user"></i>
+                <input id="input_name" type="text" placeholder="Name" required />
+            </label>
+
+            <!-- Phone Number -->
+            <label class="input input-bordered flex items-center gap-2 my-5">
+                <i class="fa-solid fa-phone"></i>
+                <input id="input_phone" type="tel" placeholder="Phone Number" required />
+            </label>
+
+            <!-- Email -->
+            <label class="input input-bordered flex items-center gap-2 my-5">
+                <i class="fa-solid fa-envelope"></i>
+                <input id="input_email" type="email" placeholder="Email" required />
+            </label>
+
+            <!-- Password -->
+            <label class="input input-bordered flex items-center gap-2 my-5">
+                <i class="fa-solid fa-key"></i>
+                <input id="input_password" type="password" placeholder="Password"  required/>
+            </label>
+
+            <button id="register_btn" class="btn btn-success my-5 w-full text-white text-2xl" type="submit">Register</button>
+        </div>
+    </div>
+
+    <script src="../JS/register.js"></script>
+</body>
+
+</html>
